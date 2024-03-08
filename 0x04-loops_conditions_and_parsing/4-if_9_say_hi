@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# print `Best School` 9 times and `Hi` once, at the 9th iteration
+i=0
+while ((i < 10)); do
+    if ((i != 8)); then echo "Best School"
+    else echo "Hi"; fi
+    i=$((i + 1))
+done
