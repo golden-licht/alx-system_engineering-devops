@@ -15,7 +15,7 @@ while ((i <= 20)); do
             echo "bad luck from Japan"
             ;;
         17)
-            echo "badh luck from Italy"
+            echo "bad luck from Italy"
             ;;
     esac
     i=$((i + 1))
