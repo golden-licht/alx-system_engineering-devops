@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# kill the process 7-highlander
+id_to_kill=$(pgrep -f "7-highlander")
+kill -SIGKILL "$id_to_kill"
