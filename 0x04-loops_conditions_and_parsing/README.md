@@ -2,3 +2,4 @@
 
 * for, while and until loops
 * if/elif/else/fi and case/esac conditions
+* file test operators like -e, -f, -d etc...
