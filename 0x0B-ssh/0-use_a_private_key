@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# connecting to 8.8.8.8 using private key found in ~/.ssh/school as user ubuntu
+ssh ubuntu@8.8.8.8 -i ~/.ssh/school
