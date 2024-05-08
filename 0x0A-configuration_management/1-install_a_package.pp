@@ -6,7 +6,7 @@ package { 'flask':
 }
 
 package { 'werkzeug':
-  ensure => '2.1.0',
-  name => 'werkzeug',
+  ensure   => '2.1.0',
+  name     => 'werkzeug',
   provider => 'pip3',
 }
