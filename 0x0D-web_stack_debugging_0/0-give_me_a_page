@@ -1,6 +1,3 @@
 #!/usr/bin/env bash
-# modify the webpage served at the default port (80)
-id=$(docker inspect --format="{{.Id}}" holbertonschool/265-0)
-docker exec -it "$id" /bin/bash
-echo "Hello Holberton" > /var/www/html/index.html
+# just start apache
 service apache2 start
