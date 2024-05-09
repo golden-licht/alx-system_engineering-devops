@@ -3,3 +3,4 @@
 id=$(docker inspect --format="{{.Id}}" holbertonschool/265-0)
 docker exec -it "$id" /bin/bash
 echo "Hello Holberton" > /var/www/html/index.html
+service apache2 start
