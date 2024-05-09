@@ -1,12 +1,12 @@
-# install flask and a dependency werkzeug
-package { 'flask':
-  ensure   => '2.1.0',
-  name     => 'flask',
+# install flask and werkzeug
+package { 'werkzeug':
+  ensure   => '2.1.1',
+  name     => 'werkzeug',
   provider => 'pip3',
 }
 
-package { 'werkzeug':
+package { 'flask':
   ensure   => '2.1.0',
-  name     => 'werkzeug',
+  name     => 'flask',
   provider => 'pip3',
 }
