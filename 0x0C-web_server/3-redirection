@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# install and configure nginx web server
+
+redirect_me_url="server {\n\tlocation /redirect_me { return 301; }\n"
+
+apt install nginx -y
+service nginx start
+echo "Hello World!" > /var/www/html/index.html
+sed -i "s@^server {@$redirect_me_url@" /etc/nginx/sites-available/default
+nginx -s reload 
