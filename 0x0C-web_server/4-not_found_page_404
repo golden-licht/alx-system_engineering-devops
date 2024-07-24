@@ -2,7 +2,7 @@
 #!/usr/bin/env bash
 # install and configure nginx web server with custom 404 message
 
-redirect_me_url="server {\n\terror_page 404 = /404_message;\n\n\tlocation = /404_message {\n\t\tinternal;\n\t\treturn 404 \"Ceci n\'est pas une page\";\n\t}\n"
+redirect_me_url="server {\n\terror_page 404 = /404_message;\n\n\tlocation = /404_message {\n\t\tinternal;\n\t\treturn 404 \"Ceci n\'est pas une page\n\";\n\t}\n"
 
 
 apt install nginx -y
