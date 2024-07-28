@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Install and configure nginx web server with custom HTTP header
+
+# Get the hostname of the machine
+hostname=$(hostname)
+
+# Define the custom header
+custom_header="add_header X-Served-By $hostname;"
+
+# Install nginx
+apt install nginx -y
+
+# Start nginx service
+service nginx start
+
+# Append the custom header line after the 'server {' block
+sed -i "/^server {/a \    $custom_header" /etc/nginx/sites-available/default
+
+# Reload nginx to apply the changes
+nginx -s reload
