@@ -44,4 +44,4 @@ if __name__ == '__main__':
         f'({len(tasks_done)}/{total_taks}):'
     )
     for task in tasks_done:
-        print(f'\t{task}')
+        print(f'\t {task}')
