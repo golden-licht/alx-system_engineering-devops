@@ -17,7 +17,7 @@ backend my_backend
   server web-01 54.208.169.128
   server web-02 34.203.201.69
 "
-apt-get update
-apt-get install -y haproxy
-echo "$haproxy_config" > /etc/haproxy/haproxy.cfg
-systemctl restart haproxy
+sudo apt-get update
+sudo apt-get install -y haproxy
+sudo echo "$haproxy_config" > /etc/haproxy/haproxy.cfg
+sudo systemctl start haproxy
