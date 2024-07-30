@@ -19,4 +19,3 @@ backend my_backend
 "
 apt-get install -y haproxy=2.4.\*
 echo "$haproxy_config" > /etc/haproxy/haproxy.cfg
-systemctl restart haproxy
