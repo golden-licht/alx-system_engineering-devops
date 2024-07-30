@@ -14,8 +14,8 @@ frontend my_frontend
 
 backend my_backend
   balance roundrobin
-  server web1 54.208.169.128
-  server web2 34.203.201.69
+  server web-01 54.208.169.128
+  server web-02 34.203.201.69
 "
 apt-get install -y haproxy
 echo "$haproxy_config" > /etc/haproxy/haproxy.cfg
