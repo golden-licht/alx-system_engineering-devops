@@ -25,7 +25,7 @@ if __name__ == '__main__':
     # get the employee name
     for user in users:
         if user.get('id') == employee_id:
-            employee_name = user.get('name')
+            employee_username = user.get('username')
             break
 
     # get all the tasks with their status
@@ -40,4 +40,4 @@ if __name__ == '__main__':
     with open(file_name, 'w', newline='') as csvfile:
         writer = csv.writer(csvfile, quoting=csv.QUOTE_ALL)
         for task in tasks:
-            writer.writerow([employee_id] + [employee_name] + task)
+            writer.writerow([employee_id] + [employee_username] + task)
