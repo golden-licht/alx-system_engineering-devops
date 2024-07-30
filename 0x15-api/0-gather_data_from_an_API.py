@@ -8,13 +8,16 @@ import json
 import sys
 import urllib.request as request
 
+users_url = "https://jsonplaceholder.typicode.com/users"
+todos_url = "https://jsonplaceholder.typicode.com/todos"
+
 if __name__ == '__main__':
     # users/employees
-    with request.urlopen('https://jsonplaceholder.typicode.com/users') as response:
+    with request.urlopen(users_url) as response:
         users = json.loads(response.read())
 
     # task todos
-    with request.urlopen('http://jsonplaceholder.typicode.com/todos') as response:
+    with request.urlopen(todos_url) as response:
         todos = json.loads(response.read())
 
     # the id of the employee we eant info for
