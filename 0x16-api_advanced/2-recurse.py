@@ -12,7 +12,6 @@ def recurse(subreddit, hot_list=[], after='', count=0):
     {subreddit}/hot/.json?after={after}&count={count}'''
     headers = {'user-agent': 'my-app/0.0.1'}
     response = requests.get(url, headers=headers, allow_redirects=False)
-    print(url)
 
     if response.status_code != 200:
         return None
