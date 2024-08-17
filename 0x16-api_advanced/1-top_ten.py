@@ -7,7 +7,7 @@ import requests
 
 
 def top_ten(subreddit):
-    url = f'https://www.reddit.com/r/{subreddit}/top/.json?count=0&limit=10'
+    url = f'https://www.reddit.com/r/{subreddit}/hot/.json?count=0&limit=10'
     headers = {'user-agent': 'my-app/0.0.1'}
 
     response = requests.get(url, headers=headers, allow_redirects=False)
